@@ -34,6 +34,9 @@ header,footer{
     text-decoration: none;
     font-size: 1.1em;   
 }
+#section-2,#section-3{
+    padding: 3em 0;
+}
 
 .title,.desc{
     color: #2c3e50;
@@ -145,7 +148,6 @@ nav li a:visited{
 
 /*Section 2*/
 #section-2{
-    padding: 3em 0;
     background: white;
 }
 .features-wrapper{
@@ -175,6 +177,22 @@ nav li a:visited{
 .features-box i,h3,p{
     padding: 0.5em 0;
     text-align: left;
+}
+
+/*Section 3 style*/
+.gallery-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+.gallery-wrapper figure{
+    flex: 1 50%;
+    overflow: hidden;
+}
+.gallery-wrapper img{
+    max-width: 100%;
+    height: auto;
 }
 
 @media(min-width: 481px){
@@ -228,6 +246,9 @@ nav li a:visited{
         font-size: 2em;
         letter-spacing: 7px;
     }
+    #section-2,#section-3{
+        padding: 4em 0;
+    }
     .section-1-btn{
         margin: 1.5em 1.1em 0;
         font-size: 1.2em;
@@ -249,5 +270,20 @@ nav li a:visited{
     }
     .features-box i,h3{
         text-align: center;
+    }
+    .gallery-wrapper{
+        background: black;
+    }
+    .gallery-wrapper figure{
+        flex:1 25%;
+    }
+    .gallery-wrapper img{
+        transform: scale(1.1);
+        transition:transform .3s ease-in-out,opacity .3s ease-in-out;
+        opacity: 0.7;
+    }
+    .gallery-wrapper img:hover{
+        transform: scale(1);
+        opacity: 1;
     }
 }
