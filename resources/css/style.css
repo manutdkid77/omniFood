@@ -109,13 +109,40 @@ nav li a:visited{
     position: absolute;
     border: none;
     background: transparent;
-    font-size: 2.5em;
+    font-size: 2.3em;
     color: white;
     top: 1em;
     right: 1em;
 }
 .nav-btn-show{
     display: flex;
+}
+
+/*Sticky Nav*/
+
+.sticky{
+    position: fixed;
+    background: white;
+    box-shadow: 0 3px 2px lightgrey;
+    padding: 0.5em 0;
+    z-index: 99;
+}
+.sticky img{
+    width: 60px;
+}
+.sticky nav{
+    padding: 0.5em 0;
+}
+.sticky nav li{
+    text-align: center;
+}
+.sticky nav li a{
+    color: #7f8c8d;
+    transition: none;
+}
+.sticky .nav-btn{
+    color: #7f8c8d;
+    top: 0.5em;
 }
 
 /*Section 1*/
@@ -248,6 +275,18 @@ nav li a:visited{
 .app-steps p{
     display: inline;
 }
+.app-steps li:last-of-type{
+    text-align: center;
+}
+.app-steps li:last-of-type a,
+.app-steps li:last-of-type a:visited{
+    text-decoration: none;
+}
+.app-steps li:last-of-type img{
+    max-width: 70%;
+    height: auto
+}
+
 
 /*Section 5 styles*/
 #section-5{
@@ -526,7 +565,7 @@ footer p a:visited{
         padding: 0 0.7em;
     }
     nav li a:hover{
-        padding-bottom: 0.3em;
+        padding-bottom: 1em;
         border-bottom: 2.5px solid #e67e22;
     }
     .nav-wrapper{
@@ -642,5 +681,13 @@ footer p a:visited{
     footer ul{
         text-align: left;
         padding: 0;
+    }
+    /*Sticky Nav*/
+    .sticky nav li a{
+        color: #7f8c8d;
+    }
+    .sticky a:hover{
+        padding-bottom: 1.8em;
+        border-bottom: 3px solid #e67e22;
     }
 }
