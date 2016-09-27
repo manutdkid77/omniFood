@@ -691,3 +691,23 @@ footer p a:visited{
         border-bottom: 3px solid #e67e22;
     }
 }
+
+/*Animations*/
+
+#section-2 .features-wrapper,
+#section-5 .features-wrapper,
+.app-photo img{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+#section-2 .features-wrapper .animated,
+#section-5 .features-wrapper .animated,
+.app-photo img.animated{
+    opacity: 1;
+}
+
+
+.price-box:first-of-type.animated{
+    animation-duration: 2s;    
+}
